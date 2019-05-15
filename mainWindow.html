@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Bootstrap core CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Ion Icons -->
+<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+<!-- No UI Slider -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.css" rel="stylesheet">
+<!--Animate CSS -->
+<link href="css/animate.css" rel="stylesheet">
+<!--Custom Styles-->
+<link rel="stylesheet" href="css/style.css">
+
+<head>
+    <title>Rathumakara FM</title>
+</head>
+
+
+<body>
+
+    <nav class="navbar fixed-top">
+        <section class="header">
+          
+            <!--Page navigation-->
+            <div class="page-flows" style="margin-left:5vw">
+                <span class="flow">
+                    <i class="ion-chevron-left"></i>
+                </span>
+                <span class="flow">
+                    <i class="ion-chevron-right disabled"></i>
+                </span>
+            </div> 
+
+            <!--Search Box-->
+            <div class="search">
+                <input type="text" placeholder="Search" />
+            </div>
+
+            <!--User-->
+            <div class="user">
+                <div class="user__info">
+                    <span class="user__info__img">
+                        <img src="img/proPic.png"
+                            alt="Profile Picture" class="img-responsive" />
+                    </span>
+                    <span class="user__info__name">
+                        <span class="first">Rathumakara User <sup style="color:#1DB954">BETA</sup></span>
+                    </span>
+
+                </div>
+
+                <div class="user__actions">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                            <i class="ion-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                            <li><a href="https://twitter.com/intent/">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </nav>
+
+    <!--Main Content-->
+    <div class="row">
+
+        <!--Programme Details-->
+        <div class="col-md-2" style="padding-left:30px;overflow-y: scroll;height: 92vh;padding-bottom: 8vh">
+            <div class=" animated fadeInLeft">
+                <div class="navigation__list">
+                    <div class="navigation__list__header" role="button" data-toggle="collapse" href="#main"
+                        aria-expanded="true" aria-controls="main">About
+                    </div>
+
+                    <div class="collapse in" id="main">
+                        <a data-toggle="modal" data-target="#storyModal" class="navigation__list__item">
+                            <i class="ion-ios-browsers"></i>
+                            <span>Our Story</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-person-stalker"></i>
+                            <span>Crew</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-android-microphone"></i>
+                            <span>Partners</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Programme Sections -->
+                <div class="navigation__list">
+
+                    <div class="navigation__list__header" role="button" data-toggle="collapse" href="#yourMusic"
+                        aria-expanded="true" aria-controls="yourMusic">
+                        Programmes
+                    </div>
+
+                    <div class="collapse in" id="yourMusic">
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-headphone"></i>
+                            <span>Talk Shows</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span>Entertainment</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-person"></i>
+                            <span>Life Style</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-baseball"></i>
+                            <span>Sports</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Programmes -->
+                <div class="navigation__list">
+                    <div class="navigation__list__header" role="button" data-toggle="collapse" href="#playlists"
+                        aria-expanded="true" aria-controls="playlists">
+                        Programmes
+                    </div>
+
+                    <div class="collapse in" id="playlists">
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_1">Scrapbook with ShenalG</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_2">Talk with Maarie</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_3">LOගොන් Answers</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_4">පොතක් එක්ක මම</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_5">Bollywood Playlist</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_6">Questions55 with Anu</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_7">DJ Slash Mixtapes</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_8">Movie Cafe with Arshath</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_9">Sinhala Rap With Ranuka</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_10">Top Hits with Nilee</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_11">Over The Boundary</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_12">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_13">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_14">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_15">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_16">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_17">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_18">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_19">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_20">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_21">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_22">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_23">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_24">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_25">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_26">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_26">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_28">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_29">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_30">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_31">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                        <a href="#" class="navigation__list__item">
+                            <i class="ion-ios-musical-notes"></i>
+                            <span id="programmes_32">රෑ 9ට සිත්ගත් ගී</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Details-->
+        <div class="col-md-7" style="overflow-y: scroll;height:85vh">
+
+            <div class="artist is-verified" style="height: auto">
+                <div class="artist__header">
+                    <!--Makara Info-->
+                    <div class="artist__info">
+                        <div class="profile__img">
+                            <img src="img/makara_logo.jpg" alt="Rathumakara Logo">
+                        </div>
+                        <div class="artist__info__meta">
+                            <div class="artist__info__type">#RathumakaraFM</div>
+                            <div class="artist__info__name">Rathumakara FM</div>
+                            <div class="artist__info__actions" style="position:absolute">
+                                <button class="button-dark" id="onAir">
+                                    <i class="ion-ios-play"></i>
+                                    Now On Air : #GreedDreamSL
+                                </button>
+                            
+                                <a target="_blank" id="btnTwitter"><button class="button-dark"
+                                        style="background-color:#1da1f2;border-color: #1da1f2">
+                                        <i class="ion-social-twitter"></i>
+                                        @RathumakaraFM_
+                                    </button></a>
+                                <!--
+                                <a id="btnWebsite" target="_blank"><button class="button-light">#RathumakaraFM</button></a>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artist__listeners">
+
+                        <div class="artist__listeners__count">2</div>
+
+                        <div class="artist__listeners__label">Listeners</div>
+
+                    </div>
+
+                    <div class="artist__navigation" style="margin-top: 1.6vh">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#artist-overview" aria-controls="artist-overview" role="tab"
+                                    data-toggle="tab">Overview</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#related-artists" aria-controls="related-artists" role="tab"
+                                    data-toggle="tab" id="tog_featured">Featured
+                                    Programmes</a>
+                            </li>
+                            <!--<li role="presentation">
+                                            <a href="#artist-about" aria-controls="artist-about" role="tab" data-toggle="tab">About</a>
+                                          </li>-->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="artist__content animated fadeInUp">
+                    <div class="tab-content">
+                        <!-- Overview -->
+                        <div role="tabpanel" class="tab-pane active" id="artist-overview">
+                            <div class="overview">
+                                <div class="overview__artist">
+                                    <!-- Latest Release-->
+                                    <div class="section-title">Latest Release</div>
+                                    <div class="latest-release">
+                                        <div class="latest-release__art">
+                                            <img id="latest_release_url" src="https://rathumakara.com/wp-content/uploads/2018/12/121.jpg"
+                                                alt="When It's Dark Out">
+                                        </div>
+
+                                        <div class="latest-release__song">
+                                            <div class="latest-release__song__title" id="latest_release_song">Swarnapaliye</div>
+                                            <div class="latest-release__song__date">
+                                                <span class="day" id="latest_release_day">04/02/2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / -->
+
+                                    <!-- Popular-->
+                                    <div class="section-title">Popular</div>
+                                    <div class="tracks">
+                                        <div class="track">
+                                            <div class="track__art">
+                                                <img id="popular_1_url" src="https://rathumakara.com/wp-content/uploads/2018/12/116.jpg"
+                                                    alt="When It's Dark Out">
+                                            </div>
+                                            <div class="track__number">1</div>
+                                            <div class="track__added">
+                                                <i class="ion-checkmark-round added"></i>
+                                            </div>
+                                            <div class="track__title" id="popular_1_song">6th Lane is Back</div>
+                                            <div class="track__explicit">
+                                                <span class="label">New</span>
+                                            </div>
+                                            <div class="track__plays" id="popular_1_artist">6th Lane</div>
+                                        </div>
+                                        <div class="track">
+                                            <div class="track__art">
+                                                <img id="popular_2_url" src="https://rathumakara.com/wp-content/uploads/2018/12/109.jpg"
+                                                    alt="When It's Dark Out">
+                                            </div>
+                                            <div class="track__number">2</div>
+                                            <div class="track__added">
+                                                <i class="ion-checkmark-round added"></i>
+                                            </div>
+                                            <div class="track__title" id="popular_2_song">Oba Nisa</div>
+                                            <div class="track__explicit">
+                                                <span class="label">New</span>
+                                            </div>
+                                            <div class="track__plays" id="popular_2_artist">BnS</div>
+                                        </div>
+                                        <div class="track">
+                                            <div class="track__art">
+                                                <img id="popular_3_url" src="https://rathumakara.com/wp-content/uploads/2018/12/109.jpg"
+                                                    alt="When It's Dark Out">
+                                            </div>
+                                            <div class="track__number">3</div>
+                                            <div class="track__added">
+                                                <i class="ion-checkmark-round added"></i>
+                                            </div>
+                                            <div class="track__title" id="popular_3_song">Senehe Ammage</div>
+                                            <div class="track__explicit">
+                                                <span class="label">New</span>
+                                            </div>
+                                            <div class="track__plays" id="popular_3_artist">Shihan<br> Mihiranga</div>
+                                        </div>
+                                    </div>
+                                    <button class="show-more button-dark">&nbsp;Listen Live</button>
+                                    <!-- / -->
+                                </div>
+
+                                <div class="overview__related">
+                                    <div class="section-title">Upcoming</div>
+                                    <div class="related-artists">
+                                        <a href="#" class="related-artist">
+                                            <span class="related-artist__img">
+                                                <img id="related_1_url" src="https://rathumakara.com/wp-content/uploads/2019/02/icon10-600x400.jpg"
+                                                    alt="Nilee">
+                                            </span>
+                                            <span class="related-artist__name" id="related_1_song">Top Hits with Nilee</span>
+                                        </a>
+                                        <a href="#" class="related-artist">
+                                            <span class="related-artist__img">
+                                                <img id="related_2_url"  src="https://rathumakara.com/wp-content/uploads/2019/02/icon12-1-600x400.jpg"
+                                                    alt="Sith Gath Gee">
+                                            </span>
+                                            <span class="related-artist__name"id="related_2_song" >රෑ 9ට සිත්ගත් ගී</span>
+                                        </a>
+                                        <a href="#" class="related-artist">
+                                            <span class="related-artist__img">
+                                                <img id="related_3_url"  src="https://rathumakara.com/wp-content/uploads/2019/02/icon11-600x400.jpg"
+                                                    alt="Over The Boundary">
+                                            </span>
+                                            <span class="related-artist__name" id="related_3_song">Over The Boundary</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / -->
+
+                        <!-- Related Programmes -->
+                        <div role="tabpanel" class="tab-pane" id="related-artists">
+                            <div class="media-cards" id="mediaCards">
+                                    <div class="media-card">
+                                        <div class="media-card__image"
+                                            style="background-image: url(https://rathumakara.com/wp-content/uploads/2019/02/icon10-600x400.jpg);">
+                                            <i class="ion-ios-play"></i>
+                                        </div>
+                                        <a class="media-card__footer">Top Hits with Nilee</a>
+                                    </div>
+                                    <div class="media-card">
+                                        <div class="media-card__image"
+                                            style="background-image: url(https://rathumakara.com/wp-content/uploads/2019/02/icon12-1-600x400.jpg);">
+                                            <i class="ion-ios-play"></i>
+                                        </div>
+                                        <a class="media-card__footer">රෑ 9ට සිත්ගත් ගී</a>
+                                    </div>
+                                    <div class="media-card">
+                                        <div class="media-card__image"
+                                            style="background-image: url(https://rathumakara.com/wp-content/uploads/2019/02/icon11-600x400.jpg);">
+                                            <i class="ion-ios-play"></i>
+                                        </div>
+                                        <a class="media-card__footer">Over The Boundary</a>
+                                    </div>
+                                    <div class="media-card">
+                                        <div class="media-card__image"
+                                            style="background-image: url(https://rathumakara.com/wp-content/uploads/2019/01/icon2-600x400.png);">
+                                            <i class="ion-ios-play"></i>
+                                        </div>
+                                        <a class="media-card__footer">Talk with Maarie</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- / -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Queue-->
+            <div class="album__tracks animated fadeInUp">
+                <div class="tracks">
+
+                    <div class="tracks__heading">
+                        <div class="tracks__heading__number">#</div>
+                        <div class="tracks__heading__title">Song</div>
+                        <div class="tracks__heading__length">
+                            <i class="ion-ios-stopwatch-outline"></i>
+                        </div>
+                        <div class="tracks__heading__popularity">
+                            <i class="ion-thumbsup"></i>
+                        </div>
+
+                    </div>
+                    <ul id="queuecontent">
+                        <li>
+                            <div class="track">
+                                <div class="track__number">1</div>
+                                <div class="track__added">
+                                    <i class="ion-checkmark-round added"></i>
+                                </div>
+                                <div class="track__title">Loading...</div>
+                                <div class="track__explicit">
+                                    <span class="label">Song</span>
+                                </div>
+                                <div class="track__length">00:00</div>
+                                <div class="track__popularity">
+                                    <i class="ion-arrow-graph-up-right"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="track">
+                                <div class="track__number">2</div>
+                                <div class="track__added">
+                                    <i class="ion-checkmark-round added"></i>
+                                </div>
+                                <div class="track__title">Loading...</div>
+                                <div class="track__explicit">
+                                    <span class="label">Song</span>
+                                </div>
+                                <div class="track__length">00:00</div>
+                                <div class="track__popularity">
+                                    <i class="ion-arrow-graph-up-right"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-3 animated fadeInRight tweetsCol" id="col3">
+            <div>
+                <a class="twitter-timeline" data-height="92vh" data-theme="dark"
+                    href="https://twitter.com/RathuMakaraFM_?ref_src=twsrc%5Etfw">Tweets by RathuMakaraFM_</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Music Player-->
+    <nav class="navbar animated fadeInUp delay-0.7s"
+        style="position: fixed;right: 0;bottom: 0;left: 0;z-index: 1030;margin-bottom: 0">
+
+        <section class="current-track">
+            <div class="current-track__actions" style="width: 90px;">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/cputh.jpg" alt="Album Art"
+                    style="height:50px;" id="npthumb">
+            </div>
+            <div style="width: 180px">
+                <h6 class="playing__song" id="npName">Loading...</h6>
+                <h6 class="playing__song" id="npArtist">Loading...</h6>
+            </div>
+            <div style="font-size: 40px;margin-left: 2vh;">
+                <a class="ion-ios-play " id="pButton" onclick="playAudio()"></a>
+            </div>
+            <div class="current-track__progress">
+                <div class="current-track__progress__start" id="duration">0:00</div>
+                <!--Progress Bar-->
+                <div class="current-track__progress__bar">
+                    <div id="song-progress" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                        <div class="noUi-base">
+                            <div class="noUi-origin __web-inspector-hide-shortcut__" style="left:55.9870%;"
+                                id="npprogress">
+                                <div class="noUi-handle noUi-handle-lower"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of progress bar-->
+                <div class="current-track__progress__finish" id="tot_duration">00:00</div>
+            </div>
+
+            <div class="current-track__options">
+                <a href="#" class="lyrics" data-toggle="modal" data-target="#lyricsModal" onclick="getLyrics();">Lyrics</a>
+                <div id="kk" style="display: none">play</div>
+                <span class="controls">
+                    <a href="#" class="control">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a href="#" class="control devices">
+                        <i class="ion-iphone"></i>
+                        <span>Devices Available<sup style="color:#1DB954">  BETA</sup></span>
+                    </a>
+                    <a href="#" class="control volume">
+                        <i class="ion-volume-high"></i>
+                        <div id="song-volume" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                            <div class="noUi-base">
+                                <div class="noUi-origin" style="left: 39.7645%;">
+                                    <div class="noUi-handle noUi-handle-lower"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </span>
+            </div>
+
+        </section>
+    </nav>
+
+    <!--  Lyrics Modal -->
+    <div id="lyricsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content"  style="background-color:#181818;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="color:white">Song Lyrics</h4>
+                </div>
+                <div class="modal-body">
+                    <h3 id="songNameLy"  style="color:white;text-align: center">Loading...</h3>
+                    <pre id="songLyrics"  style="color:white;text-align: center;background-color: #181818; font-family: 'Montserrat', sans-serif">No Song Lyrics Available!</pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+        <div style="display:hidden">
+            <h6 id="search_name"></h6>
+            <h6 id="search_artist"></h6>
+            <h6 id="songLyrics"></h6>
+        </div>
+    </div>
+
+
+    <!--  Our Story Modal -->
+    <div id="storyModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content"  style="background-color:#181818;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="color:white;text-align: center">🐲 Rathumakara FM 🐲</h4>
+                </div>
+                <div class="modal-body">
+                    <h3 style="color:white;text-align: center">Our Story</h3>
+                    <p style="color:white;text-align: center;background-color: #181818; font-family: 'Montserrat', sans-serif">
+                        <h4 style="color:white;text-align: center;background-color: #181818; font-family: 'Montserrat', sans-serif">The #1 hit music station of all Sri Lankan Social Media</h4><br>
+                        <h6 style="color:white;text-align: center;background-color: #181818; font-family: 'Montserrat', sans-serif">The first ever Sri Lankan Open-mic online radio channel! We are the #1 hit music station of all Sri Lankan Tweeps, bringing you the tunes of the youth to fix your moods.</h6>
+
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#c91230;border: none;color: white">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JQuery JS-->
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <!--Bootstrap JS-->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--No UI Slider JS-->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.3.0/nouislider.min.js"></script>
+    <!--Javascript-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--External Links-->
+    <script>
+        window.onload = getUI();
+    </script>
+</body>
+
+</html>

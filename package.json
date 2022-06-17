@@ -9,7 +9,7 @@
   "author": "Suvin Nimnaka",
   "license": "ISC",
   "dependencies": {
-    "electron": "^11.5.0",
+    "electron": "^15.5.5",
     "jquery": "^3.4.1"
   }
 }
